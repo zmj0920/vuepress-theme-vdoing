@@ -19,17 +19,8 @@ git init
 git add -A
 git commit -m "${msg}"
 echo "上传github开始"
-git push -f $githubUrl master:master # 推送到github
+git push -f $githubUrl master:dev # 推送到github
 echo "上传github完成"
-# deploy to coding
-if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  codingUrl= git@e.coding.net:zmj09201/coding-code-guide/coding-code-guide.git
-else
-  codingUrl=https://SFcloaNVYQ:${CODING_TOKEN}@e.coding.net/zmj09201/coding-code-guide/coding-code-guide.git
-fi
-echo "上传coding开始"
-git push -f $codingUrl master # 推送到coding
-echo "上传coding完成"
 
 cd -
 rm -rf docs/.vuepress/dist
