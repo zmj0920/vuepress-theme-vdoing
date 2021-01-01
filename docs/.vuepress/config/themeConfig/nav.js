@@ -15,6 +15,10 @@ module.exports = [{
             text: 'Vue',
             link: '/pages/802a1ca6f7b71c59/'
           },
+          {
+            text: 'JavaScript常用技巧',
+            link: '/pages/8143cc480faccdd/'
+          },
         ]
       },
       {
@@ -78,23 +82,14 @@ module.exports = [{
   },
   {
     text: '插件',
-    link: '/pages/db78e2/'
-  },
-  {
-    text: '案例',
-    link: '/pages/5d571c/'
-  },
-  {
-    text: '问答',
-    link: '/pages/9cc27d/'
-  },
-  {
-    text: '💖支持',
-    link: '/pages/1b12ed/'
-  },
-  {
-    text: '反馈',
-    link: '/pages/5dfce5/'
+    link: '/pages/db78e2/',
+    items: [{
+      text: '前端插件',
+      link: '/pages/db78e2/'
+    }, {
+      text: '后端插件',
+      link: '/pages/db78e23424/'
+    }]
   },
   {
     text: '指南',
@@ -127,7 +122,6 @@ module.exports = [{
         text: 'Markdown 容器',
         link: '/pages/d0d7eb/'
       },
-
       {
         text: '相关文章',
         items: [{
@@ -158,52 +152,4 @@ module.exports = [{
       }
     ]
   },
-
-  // {
-  //   text: '页面',
-  //   link: '/ui/',
-  //   items: [
-  //     {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
-  //     {text: 'CSS', link: '/pages/0a83b083bdf257cb/'},
-  //   ]
-  // },
-  // {
-  //   text: '技术',
-  //   link: '/technology/',
-  //   items: [
-  //     {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
-  //     {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
-  //     {text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'},
-  //     {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
-  //   ]
-  // },
-  // {
-  //   text: '更多',
-  //   link: '/more/',
-  //   items: [
-  //     {text: '学习', link: '/pages/a8692ab3bdcb4588/'},
-  //     {text: '面试', link: '/pages/aea6571b7a8bae86/'},
-  //     {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
-  //     {text: '友情链接', link: '/friends/'},
-  //   ]
-  // },
-  // {text: '关于', link: '/about/'},
-  // {
-  //   text: '收藏',
-  //   link: '/pages/beb6c0bd8a66cea6/',
-  //   items: [
-  //     {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
-  //     {text: '资源', link: '/pages/eee83a9211a70f9d/'},
-  //     {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-  //   ]
-  // },
-  // {
-  //   text: '索引',
-  //   link: '/archives/',
-  //   items: [
-  //     {text: '分类', link: '/categories/'},
-  //     {text: '标签', link: '/tags/'},
-  //     {text: '归档', link: '/archives/'},
-  //   ]
-  // }
 ]

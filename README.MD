@@ -1,10 +1,11 @@
-<p align="center"><a href="https://xugaoyi.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="logo"></a></p>
+# 前端学习知识积累
+
+> ## code can do anything.
 
 
-<h2 align="center">vuepress-theme-vdoing</h2>
+> ## A simple handbook.
 
-[在线文档(github源)](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
+####    个人邮箱：mj960920@163.com
 
-[在线文档(国内源)](https://doc.xugaoyi.com/)
+####    个人hexo：[http://www.521em.cn](http://www.521em.cn)
 
-[主题仓库](https://github.com/xugaoyi/vuepress-theme-vdoing)
