@@ -8,17 +8,21 @@ module.exports = [{
     items: [{
         text: '前端文章',
         items: [{
-            text: 'JavaScript',
-            link: '/pages/8143cc480faf9a11/'
+            text: 'JavaScript文章',
+            link: '/pages/8143cc480faccdd/'
           },
           {
             text: 'Vue',
             link: '/pages/802a1ca6f7b71c59/'
           },
-          {
-            text: 'JavaScript常用技巧',
-            link: '/pages/8143cc480faccdd/'
-          },
+          // {
+          //   text: 'JavaScript常用技巧',
+          //   link: '/pages/8143cc480faccdd/'
+          // },
+          // {
+          //   text: '常用正则表达式',
+          //   link: '/pages/thrxk0t3wc/'
+          // },
         ]
       },
       {
