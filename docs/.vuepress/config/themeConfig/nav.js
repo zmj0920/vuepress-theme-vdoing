@@ -15,40 +15,22 @@ module.exports = [{
             text: 'Vue',
             link: '/pages/802a1ca6f7b71c59/'
           },
-          // {
-          //   text: 'JavaScript常用技巧',
-          //   link: '/pages/8143cc480faccdd/'
-          // },
-          // {
-          //   text: '常用正则表达式',
-          //   link: '/pages/thrxk0t3wc/'
-          // },
         ]
       },
-      {
-        text: '学习笔记',
+    ]
+  },
+    {
+    text: '后端',
+    link: '/admin/', //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [{
+        text: '后端文章',
         items: [{
-            text: '《JavaScript教程》笔记',
-            link: '/note/javascript/'
-          },
-          {
-            text: '《ES6 教程》笔记',
-            link: '/note/es6/'
-          },
-          {
-            text: '《Vue》笔记',
-            link: '/note/vue/'
-          },
-          {
-            text: '《TypeScript 从零实现 axios》',
-            link: '/note/typescript-axios/'
-          },
-          {
-            text: '小程序笔记',
-            link: '/note/wx-miniprogram/'
+            text: 'GO语言基础学习',
+            link: '/pages/khe2h7e8xh/'
           },
         ]
-      }
+      },
+   
     ]
   },
   {
