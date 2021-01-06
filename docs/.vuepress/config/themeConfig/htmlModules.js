@@ -81,16 +81,16 @@ module.exports = {
     //     <script>
     //         (adsbygoogle = window.adsbygoogle || []).push({});
     //     </script>`,
-    windowRB:
-       `<!-- 固定160*160px -->
-        <ins class="adsbygoogle"
-            style="display:inline-block;width:160px;height:160px"
-            data-ad-client="ca-pub-7828333725993554"
-            data-ad-slot="8377369658"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        `,
+    // windowRB:
+    //    `<!-- 固定160*160px -->
+    //     <ins class="adsbygoogle"
+    //         style="display:inline-block;width:160px;height:160px"
+    //         data-ad-client="ca-pub-7828333725993554"
+    //         data-ad-slot="8377369658"></ins>
+    //     <script>
+    //         (adsbygoogle = window.adsbygoogle || []).push({});
+    //     </script>
+    //     `,
   }
   
   
