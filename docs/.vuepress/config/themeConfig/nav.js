@@ -66,22 +66,6 @@ module.exports = [{
             link: "/pages/ad247c4332211551/"
           },
           {
-            text: "如何让你的笔记更有表现力",
-            link: "/pages/dd027d/"
-          },
-          {
-            text: "部署",
-            link: "/pages/0fc1d2/"
-          },
-          {
-            text: "关于写文章和H1标题",
-            link: "/pages/9ae0bd/"
-          },
-          {
-            text: "关于博客搭建与管理",
-            link: "/pages/26997d/"
-          },
-          {
             text: "在线编辑和新增文章的方法",
             link: "/pages/c5a54d/"
           },
@@ -95,10 +79,6 @@ module.exports = [{
             link: "/pages/a20ce8/"
           },
           {
-            text: "首页配置",
-            link: "/pages/f14bdb/"
-          },
-          {
             text: "front matter配置",
             link: "/pages/3216b0/"
           },
@@ -109,14 +89,6 @@ module.exports = [{
           {
             text: "添加摘要",
             link: "/pages/1cc523/"
-          },
-          {
-            text: "修改主题颜色和样式",
-            link: "/pages/f51918/"
-          },
-          {
-            text: "评论栏",
-            link: "/pages/ce175c/"
           },
         ],
       },
