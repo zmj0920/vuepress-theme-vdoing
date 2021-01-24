@@ -20,6 +20,10 @@ module.exports = [
     name: 'theme-color',
     content: '#11a8cd'
   }], // 移动浏览器主题颜色
+  ['meta', {
+    name: 'baidu-site-verification',
+    content: 'code-4kmwjMtj6j'
+  }], 
   [
     'script',
     {
