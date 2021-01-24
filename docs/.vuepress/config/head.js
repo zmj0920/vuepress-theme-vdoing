@@ -14,7 +14,7 @@ module.exports = [
   ],
   ['meta', {
     name: 'baidu-site-verification',
-    content: '7F55weZDDc'
+    content: 'code-4kmwjMtj6j'
   }], // 百度统计的站长验证
   ['meta', {
     name: 'theme-color',
