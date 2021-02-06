@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png
-heroText: 君吟' blog
+heroText: 前端学习之道
 tagline: 🚀业余前端自由写手，知识管理，技术文章分享，资料收集
 # actionText: 开始使用 →
 actionLink: /pages/a2f161/
