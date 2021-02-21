@@ -80,7 +80,7 @@ module.exports = {
     // 页脚信息
     createYear: 2020, // 博客创建年份
     copyrightInfo:
-      '前端学习之道 | <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备17038403号-3</a>', // 博客版权信息，支持a标签
+      '前端学习之道 | <a href="https://beian.miit.gov.cn" target="_blank">豫ICP备17038403号-3</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }
