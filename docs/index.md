@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png
-heroText: 前端学习之道
+heroText: 前端学习之道 
 tagline: 🚀业余前端自由写手，知识管理，技术文章分享，资料收集
 # actionText: 开始使用 →
 actionLink: /pages/a2f161/
@@ -58,6 +58,12 @@ postList: none
   avatar: https://reinness.com/avatar.png
   link: https://reinness.com
   bgColor: '#FCDBA0'
+  textColor: '#A05F2C'
+- name: kirito
+  desc: 被带歪也不能怨我
+  avatar: https://blog-1256556944.cos.ap-nanjing.myqcloud.com/kirito.jpg
+  link: https://www.kirito41dd.cn/
+  bgColor: '#CBEAFA'
   textColor: '#A05F2C'
 ```
 :::
