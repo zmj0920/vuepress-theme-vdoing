@@ -33,7 +33,7 @@ postList: none
 这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是 Web 前端技术。如果你喜欢这个博客&主题欢迎到[GitHub](https://github.com/zmj0920/vuepress-theme-vdoing)点个 Star，或者交换友链 ( •̀ ω •́ )✧
 
 
-[<img src="https://github-readme-stats.vercel.app/api/pin/?username=zmj0920&amp;repo=FleetingTime" alt="ReadMe Card" class="no-zoom">](https://github.com/zmj0920/vuepress-theme-vdoing)
+[<img src="https://github-readme-stats.vercel.app/api/pin/?username=zmj0920&amp;repo=FleetingTime" alt="ReadMe Card" class="no-zoom">](https://github.com/zmj0920/FleetingTime)
 [<img src="https://github-readme-stats.vercel.app/api/pin/?username=zmj0920&amp;repo=vuepress-theme-vdoing" alt="ReadMe Card" class="no-zoom">](https://www.521em.cn/)
 
 本站主题是 [`Vdoing`](https://github.com/zmj0920/vuepress-theme-vdoing)，这是一款简洁高效的 VuePress 知识管理&博客 主题。旨在轻松打造一个`结构化`与`碎片化`并存的个人在线知识库&博客，让你的知识海洋像一本本书一样清晰易读。配合多维索引，让每一个知识点都可以快速定位！ 更多[详情](https://github.com/zmj0920/vuepress-theme-vdoing)。
@@ -56,7 +56,7 @@ web 前端初级小白
 - **WeChat or QQ**: <a :href="qqUrl" class='qq'>506499594</a>
 - **Email**: <a href="mailto:506499594@qq.com">506499594@qq.com</a>
 - **GitHub**: <https://github.com/zmj0920>
-- **交流 QQ 群**群号：679278583
+- **交流 QQ 群**: 679278583
 
 ## 🎉前端学习关注公众号
 
@@ -87,6 +87,8 @@ web 前端初级小白
   desc: 积跬步以至千里，喜欢学习喜欢你。 # 介绍
   avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像
   link: https://xugaoyi.com/  # 链接
+  bgColor: "#CBEAFA" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
+  textColor: "#6854A1" # 可选，默认var(--textColor)
 - name: 麋鹿鲁哟
   desc: 大道至简，知易行难
   avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
