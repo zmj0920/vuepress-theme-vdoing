@@ -7,13 +7,46 @@ module.exports = [{
     link: "/web/", //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
       text: "前端文章",
-      items: [{
-          text: "JavaScript文章",
-          link: "/pages/8143cc480faccdd/",
+      items: [
+        {
+          text: "HTML相关文章",
+          link: "/html/",
         },
         {
-          text: "Vue",
-          link: "/pages/802a1ca6f7b71c59/",
+          text: "CSS相关文章",
+          link: "/css/",
+        },
+        {
+          text: "JavaScript相关文章",
+          link: "/javascript/",
+        },
+        {
+          text: "TypeScript相关文章",
+          link: "/typecript/",
+        },
+        {
+          text: "Vue相关文章",
+          link: "/vue/",
+        },
+        {
+          text: "React相关文章",
+          link: "/react/",
+        },
+        {
+          text: "Angular相关文章",
+          link: "/angular/",
+        },
+        {
+          text: "Flutter相关文章",
+          link: "/flutter/",
+        },
+        {
+          text: "小程序相关文章",
+          link: "/applet/",
+        },
+        {
+          text: "Node相关文章",
+          link: "/node/",
         },
       ],
     }, ],
@@ -45,8 +78,7 @@ module.exports = [{
   {
     text: "收藏",
     link: "/pages/beb6c0bd8a66cea6/",
-    items: [
-      {
+    items: [{
         text: "网站",
         link: "/pages/beb6c0bd8a66cea6/"
       },
@@ -59,12 +91,10 @@ module.exports = [{
   {
     text: "问题",
     link: "/pages/e14099/",
-    items: [
-      {
-        text: "问题列表",
-        link: "/pages/e14099/"
-      },
-    ],
+    items: [{
+      text: "问题列表",
+      link: "/pages/e14099/"
+    }, ],
   },
   {
     text: "指南",
@@ -103,5 +133,10 @@ module.exports = [{
         ],
       },
     ],
+  },
+  {
+    text: "Article timeline",
+    link: "/blog/",
+    items: [],
   },
 ];
