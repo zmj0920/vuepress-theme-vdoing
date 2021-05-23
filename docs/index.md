@@ -113,6 +113,12 @@ web 前端初级小白
   link: https://www.kirito41dd.cn/
   bgColor: "#CBEAFA"
   textColor: "#A05F2C"
+- name: 孟哒哒
+  desc: 本来无望的事,大胆尝试,往往能成功
+  avatar: https://thirdqq.qlogo.cn/g?b=qq&nk=3336765271&s=100
+  link: http://www.webjsx.com/
+  bgColor: "#CBEAFA"
+  textColor: "#A05F2C"
 ```
 
 :::
