@@ -19,28 +19,27 @@
  */
 
 module.exports = {
-    // homeSidebarB:
-    //   `<!-- 纵向自适应 -->
-    //   <ins class="adsbygoogle"
-    //       style="display:block"
-    //       data-ad-client="ca-pub-7828333725993554"
-    //       data-ad-slot="7802654582"
-    //       data-ad-format="auto"
-    //       data-full-width-responsive="true"></ins>
-    //   <script>
-    //       (adsbygoogle = window.adsbygoogle || []).push({});
-    //   </script>`,
-    // sidebarT:
-    //   `<!-- 100% * 150px (可正常显示)-->
-    //   <ins class="adsbygoogle"
-    //         style="display:inline-block;width:100%;max-height:150px"
-    //         data-ad-client="ca-pub-7828333725993554"
-    //         data-ad-slot="6625304284"></ins>
-    //     <script>
-    //         (adsbygoogle = window.adsbygoogle || []).push({});
-    //     </script>`,
-    sidebarB:
-      `<!-- 正方形 -->
+  // homeSidebarB:
+  //   `<!-- 纵向自适应 -->
+  //   <ins class="adsbygoogle"
+  //       style="display:block"
+  //       data-ad-client="ca-pub-7828333725993554"
+  //       data-ad-slot="7802654582"
+  //       data-ad-format="auto"
+  //       data-full-width-responsive="true"></ins>
+  //   <script>
+  //       (adsbygoogle = window.adsbygoogle || []).push({});
+  //   </script>`,
+  // sidebarT:
+  //   `<!-- 100% * 150px (可正常显示)-->
+  //   <ins class="adsbygoogle"
+  //         style="display:inline-block;width:100%;max-height:150px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="6625304284"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
+  sidebarB: `<!-- 正方形 -->
         <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-7828333725993554"
@@ -50,18 +49,17 @@ module.exports = {
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>`,
-    // pageT: //
-    //   `<!-- 100% * max-120px (暂未看到效果)-->
-    //    <ins class="adsbygoogle"
-    //         style="display:inline-block;width:100%;max-height:120px"
-    //         data-ad-client="ca-pub-7828333725993554"
-    //         data-ad-slot="6625304284"></ins>
-    //     <script>
-    //         (adsbygoogle = window.adsbygoogle || []).push({});
-    //     </script>`,
-    // pageTshowMode: 'article',
-    pageB:
-      `<!-- 横向自适应 -->
+  // pageT: //
+  //   `<!-- 100% * max-120px (暂未看到效果)-->
+  //    <ins class="adsbygoogle"
+  //         style="display:inline-block;width:100%;max-height:120px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="6625304284"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
+  // pageTshowMode: 'article',
+  pageB: `<!-- 横向自适应 -->
         <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-7828333725993554"
@@ -71,35 +69,34 @@ module.exports = {
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>`,
-    // pageBshowMode: 'article',
-    // windowLB: // 遮挡部分侧边栏
-    //   `<!-- 固定200*200px -->
-    //     <ins class="adsbygoogle"
-    //         style="display:inline-block;width:200px;height:200px"
-    //         data-ad-client="ca-pub-7828333725993554"
-    //         data-ad-slot="6625304284"></ins>
-    //     <script>
-    //         (adsbygoogle = window.adsbygoogle || []).push({});
-    //     </script>`,
-    // windowRB:
-    //    `<!-- 固定160*160px -->
-    //     <ins class="adsbygoogle"
-    //         style="display:inline-block;width:160px;height:160px"
-    //         data-ad-client="ca-pub-7828333725993554"
-    //         data-ad-slot="8377369658"></ins>
-    //     <script>
-    //         (adsbygoogle = window.adsbygoogle || []).push({});
-    //     </script>
-    //     `,
-  }
-  
-  
-  // module.exports = {
-  //   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   sidebarT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   sidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   pageT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   pageB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   windowLB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  //   windowRB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-  // }
+  // pageBshowMode: 'article',
+  // windowLB: // 遮挡部分侧边栏
+  //   `<!-- 固定200*200px -->
+  //     <ins class="adsbygoogle"
+  //         style="display:inline-block;width:200px;height:200px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="6625304284"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
+  // windowRB:
+  //    `<!-- 固定160*160px -->
+  //     <ins class="adsbygoogle"
+  //         style="display:inline-block;width:160px;height:160px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="8377369658"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>
+  //     `,
+};
+
+// module.exports = {
+//   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   sidebarT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   sidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   pageT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   pageB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   windowLB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+//   windowRB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+// }
