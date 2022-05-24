@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>keystone部署及操作 | 前端学习之道</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="code-4kmwjMtj6j">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.9c7d2b41.css" as="style"><link rel="preload" href="/assets/js/app.e227a3dc.js" as="script"><link rel="preload" href="/assets/js/3.fd6670bb.js" as="script"><link rel="preload" href="/assets/js/104.23822f40.js" as="script"><link rel="prefetch" href="/assets/js/1.cfed60bd.js"><link rel="prefetch" href="/assets/js/10.10dd3c00.js"><link rel="prefetch" href="/assets/js/100.9f455545.js"><link rel="prefetch" href="/assets/js/101.1b9f3a8e.js"><link rel="prefetch" href="/assets/js/102.82719629.js"><link rel="prefetch" href="/assets/js/103.f5b69299.js"><link rel="prefetch" href="/assets/js/105.e92079f2.js"><link rel="prefetch" href="/assets/js/106.cf3ddc09.js"><link rel="prefetch" href="/assets/js/107.15bb7b72.js"><link rel="prefetch" href="/assets/js/108.d7c79b6a.js"><link rel="prefetch" href="/assets/js/109.3a6c4cc1.js"><link rel="prefetch" href="/assets/js/11.07b482fc.js"><link rel="prefetch" href="/assets/js/110.76fc6091.js"><link rel="prefetch" href="/assets/js/12.78b78a02.js"><link rel="prefetch" href="/assets/js/13.bc962a45.js"><link rel="prefetch" href="/assets/js/14.7f716e0d.js"><link rel="prefetch" href="/assets/js/15.c996be4f.js"><link rel="prefetch" href="/assets/js/16.16c6d001.js"><link rel="prefetch" href="/assets/js/17.1b224907.js"><link rel="prefetch" href="/assets/js/18.2dba00b9.js"><link rel="prefetch" href="/assets/js/19.d7c73f91.js"><link rel="prefetch" href="/assets/js/20.1c09e8d2.js"><link rel="prefetch" href="/assets/js/21.6ae0c7df.js"><link rel="prefetch" href="/assets/js/22.c61644a4.js"><link rel="prefetch" href="/assets/js/23.05b39f3c.js"><link rel="prefetch" href="/assets/js/24.276ef572.js"><link rel="prefetch" href="/assets/js/25.fc24dcd7.js"><link rel="prefetch" href="/assets/js/26.42f1d2e3.js"><link rel="prefetch" href="/assets/js/27.9d2fed53.js"><link rel="prefetch" href="/assets/js/28.ec243abd.js"><link rel="prefetch" href="/assets/js/29.4508077a.js"><link rel="prefetch" href="/assets/js/30.ceedb5fd.js"><link rel="prefetch" href="/assets/js/31.d85ea064.js"><link rel="prefetch" href="/assets/js/32.ce5dcd72.js"><link rel="prefetch" href="/assets/js/33.96f5b959.js"><link rel="prefetch" href="/assets/js/34.ae958573.js"><link rel="prefetch" href="/assets/js/35.a5ad190c.js"><link rel="prefetch" href="/assets/js/36.a35ab962.js"><link rel="prefetch" href="/assets/js/37.6ccf2d21.js"><link rel="prefetch" href="/assets/js/38.8ed68283.js"><link rel="prefetch" href="/assets/js/39.a8934ab8.js"><link rel="prefetch" href="/assets/js/4.afbf8dd4.js"><link rel="prefetch" href="/assets/js/40.a6bff98c.js"><link rel="prefetch" href="/assets/js/41.116140b6.js"><link rel="prefetch" href="/assets/js/42.bc934379.js"><link rel="prefetch" href="/assets/js/43.58944225.js"><link rel="prefetch" href="/assets/js/44.de0fac37.js"><link rel="prefetch" href="/assets/js/45.b72ab4f3.js"><link rel="prefetch" href="/assets/js/46.e8ec1522.js"><link rel="prefetch" href="/assets/js/47.ef609333.js"><link rel="prefetch" href="/assets/js/48.c856ed87.js"><link rel="prefetch" href="/assets/js/49.1f7eb9b6.js"><link rel="prefetch" href="/assets/js/5.94d22f30.js"><link rel="prefetch" href="/assets/js/50.a10f98f4.js"><link rel="prefetch" href="/assets/js/51.7d1e5e82.js"><link rel="prefetch" href="/assets/js/52.5754e4d8.js"><link rel="prefetch" href="/assets/js/53.1c9aa3b3.js"><link rel="prefetch" href="/assets/js/54.5558a87d.js"><link rel="prefetch" href="/assets/js/55.73f6339d.js"><link rel="prefetch" href="/assets/js/56.8a1ed185.js"><link rel="prefetch" href="/assets/js/57.6fe1e694.js"><link rel="prefetch" href="/assets/js/58.28ad56f0.js"><link rel="prefetch" href="/assets/js/59.5eaa01d6.js"><link rel="prefetch" href="/assets/js/6.96bfac85.js"><link rel="prefetch" href="/assets/js/60.3bdb5e6e.js"><link rel="prefetch" href="/assets/js/61.bff26c8f.js"><link rel="prefetch" href="/assets/js/62.12019e5f.js"><link rel="prefetch" href="/assets/js/63.676c0a22.js"><link rel="prefetch" href="/assets/js/64.5eca8d99.js"><link rel="prefetch" href="/assets/js/65.5358d4f4.js"><link rel="prefetch" href="/assets/js/66.f7696be2.js"><link rel="prefetch" href="/assets/js/67.b0575854.js"><link rel="prefetch" href="/assets/js/68.b7892b68.js"><link rel="prefetch" href="/assets/js/69.1b2583a1.js"><link rel="prefetch" href="/assets/js/7.83a1503f.js"><link rel="prefetch" href="/assets/js/70.3558a44e.js"><link rel="prefetch" href="/assets/js/71.488a0e53.js"><link rel="prefetch" href="/assets/js/72.eaec1bae.js"><link rel="prefetch" href="/assets/js/73.235147f5.js"><link rel="prefetch" href="/assets/js/74.0821de1e.js"><link rel="prefetch" href="/assets/js/75.e2f2e8ee.js"><link rel="prefetch" href="/assets/js/76.5904dcd6.js"><link rel="prefetch" href="/assets/js/77.4a591fd2.js"><link rel="prefetch" href="/assets/js/78.e3fe65ce.js"><link rel="prefetch" href="/assets/js/79.a2a49e65.js"><link rel="prefetch" href="/assets/js/8.f6ebf9fb.js"><link rel="prefetch" href="/assets/js/80.9650ceea.js"><link rel="prefetch" href="/assets/js/81.ac573016.js"><link rel="prefetch" href="/assets/js/82.6b22ea4e.js"><link rel="prefetch" href="/assets/js/83.280a5762.js"><link rel="prefetch" href="/assets/js/84.7c084f95.js"><link rel="prefetch" href="/assets/js/85.f7d34184.js"><link rel="prefetch" href="/assets/js/86.e285678f.js"><link rel="prefetch" href="/assets/js/87.272866c8.js"><link rel="prefetch" href="/assets/js/88.ba170cf5.js"><link rel="prefetch" href="/assets/js/89.ba6488a4.js"><link rel="prefetch" href="/assets/js/9.f5d54197.js"><link rel="prefetch" href="/assets/js/90.50e94eaf.js"><link rel="prefetch" href="/assets/js/91.d23ea56d.js"><link rel="prefetch" href="/assets/js/92.265f84bb.js"><link rel="prefetch" href="/assets/js/93.2945ac11.js"><link rel="prefetch" href="/assets/js/94.21aa3886.js"><link rel="prefetch" href="/assets/js/95.df2bbd7f.js"><link rel="prefetch" href="/assets/js/96.ea40ed54.js"><link rel="prefetch" href="/assets/js/97.2ab6a48c.js"><link rel="prefetch" href="/assets/js/98.4f3dca3f.js"><link rel="prefetch" href="/assets/js/99.cdee6350.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9c7d2b41.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/logo3.png" alt="前端学习之道" class="logo"> <span class="site-name can-hide">前端学习之道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/" class="nav-link">HTML相关文章</a></li><li class="dropdown-subitem"><a href="/css/" class="nav-link">CSS相关文章</a></li><li class="dropdown-subitem"><a href="/javascript/" class="nav-link">JavaScript相关文章</a></li><li class="dropdown-subitem"><a href="/typecript/" class="nav-link">TypeScript相关文章</a></li><li class="dropdown-subitem"><a href="/vue/" class="nav-link">Vue相关文章</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">React相关文章</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">Angular相关文章</a></li><li class="dropdown-subitem"><a href="/flutter/" class="nav-link">Flutter相关文章</a></li><li class="dropdown-subitem"><a href="/applet/" class="nav-link">小程序相关文章</a></li><li class="dropdown-subitem"><a href="/node/" class="nav-link">Node相关文章</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/admin/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/khe2h7e8xh/" class="nav-link">GO语言基础学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/635088/" class="nav-link">《Git》学习笔记</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="云计算" class="dropdown-title"><a href="/cloudcomputing/" class="link-title">云计算</a> <span class="title" style="display:none;">云计算</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>云计算</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/openstack/" class="nav-link">OpenStack 系列</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><a href="/pages/e14099/" class="link-title">问题</a> <span class="title" style="display:none;">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/e14099/" class="nav-link">问题列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><a href="/pages/ad247c4332211551/" class="link-title">指南</a> <span class="title" style="display:none;">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>相关文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/ad247c4332211551/" class="nav-link">Markdown使用教程 容器</a></li><li class="dropdown-subitem"><a href="/pages/c5a54d/" class="nav-link">在线编辑和新增文章的方法</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/pages/1cc523/" class="nav-link">添加摘要</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">Article timeline</a></div> <a href="https://github.com/zmj0920/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/" class="nav-link">HTML相关文章</a></li><li class="dropdown-subitem"><a href="/css/" class="nav-link">CSS相关文章</a></li><li class="dropdown-subitem"><a href="/javascript/" class="nav-link">JavaScript相关文章</a></li><li class="dropdown-subitem"><a href="/typecript/" class="nav-link">TypeScript相关文章</a></li><li class="dropdown-subitem"><a href="/vue/" class="nav-link">Vue相关文章</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">React相关文章</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">Angular相关文章</a></li><li class="dropdown-subitem"><a href="/flutter/" class="nav-link">Flutter相关文章</a></li><li class="dropdown-subitem"><a href="/applet/" class="nav-link">小程序相关文章</a></li><li class="dropdown-subitem"><a href="/node/" class="nav-link">Node相关文章</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/admin/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/khe2h7e8xh/" class="nav-link">GO语言基础学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/635088/" class="nav-link">《Git》学习笔记</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="云计算" class="dropdown-title"><a href="/cloudcomputing/" class="link-title">云计算</a> <span class="title" style="display:none;">云计算</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>云计算</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/openstack/" class="nav-link">OpenStack 系列</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><a href="/pages/e14099/" class="link-title">问题</a> <span class="title" style="display:none;">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/e14099/" class="nav-link">问题列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><a href="/pages/ad247c4332211551/" class="link-title">指南</a> <span class="title" style="display:none;">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>相关文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/ad247c4332211551/" class="nav-link">Markdown使用教程 容器</a></li><li class="dropdown-subitem"><a href="/pages/c5a54d/" class="nav-link">在线编辑和新增文章的方法</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/pages/1cc523/" class="nav-link">添加摘要</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">Article timeline</a></div> <a href="https://github.com/zmj0920/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/pages/f8faa5/" class="sidebar-link">云计算介绍</a></li><li><a href="/pages/f9e4da/" class="sidebar-link">keystone基础</a></li><li><a href="/pages/56cf09/" class="sidebar-link">HTTP协议</a></li><li><a href="/pages/1be7af/" class="sidebar-link">网关协议cgi,fastcgi,wsgi,uwsgi</a></li><li><a href="/pages/720e78/" aria-current="page" class="active sidebar-link">keystone部署及操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/720e78/#二-版本信息" class="sidebar-link">二 版本信息</a></li><li class="sidebar-sub-header level2"><a href="/pages/720e78/#三-部署keystone" class="sidebar-link">三 部署keystone</a></li><li class="sidebar-sub-header level2"><a href="/pages/720e78/#四-keystone操作" class="sidebar-link">四 keystone操作</a></li><li class="sidebar-sub-header level2"><a href="/pages/720e78/#五-验证" class="sidebar-link">五 验证</a></li><li class="sidebar-sub-header level2"><a href="/pages/720e78/#六-创建脚本" class="sidebar-link">六 创建脚本</a></li><li class="sidebar-sub-header level2"><a href="/pages/720e78/#七-keystone使用套路总结" class="sidebar-link">七 keystone使用套路总结</a></li></ul></li><li><a href="/pages/2f91a5/" class="sidebar-link">glance基础</a></li><li><a href="/pages/2e9698/" class="sidebar-link">glance部署及操作</a></li><li><a href="/pages/71ad3b/" class="sidebar-link">虚拟化介绍</a></li><li><a href="/pages/ae81b2/" class="sidebar-link">kvm介绍</a></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7828333725993554"
+            data-ad-slot="3508773082"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1baff76c><div class="articleInfo" data-v-1baff76c><ul class="breadcrumbs" data-v-1baff76c><li data-v-1baff76c><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1baff76c></a></li> <li data-v-1baff76c><span data-v-1baff76c>openstack</span></li></ul> <div class="info" data-v-1baff76c><div title="作者" class="author iconfont icon-touxiang" data-v-1baff76c><a href="https://github.com/zmj0920" target="_blank" title="作者" class="beLink" data-v-1baff76c>前端学习之道</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1baff76c><a href="javascript:;" data-v-1baff76c>2021-11-22</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">keystone部署及操作<!----></h1>  <div class="theme-vdoing-content content__default"><p><a href="https://www.cnblogs.com/xiaoyuanqujing/articles/11838822.html" target="_blank" rel="noopener noreferrer">02-04 keystone部署及操作<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>##一 前言</p> <p>任何软件的部署都是没有技术含量的，任何就部署讲部署的人都是江湖骗子。</p> <p>部署的本质就是拷贝，粘贴，回车。我们家养了条狗，它可以胜任这件事情。</p> <p>我们搞技术的，一定不能迂腐：轻信或者一概不信。</p> <p>轻信者的傻逼就像是只学了上半册的葵花宝典，上半册教你欲练此功必先自宫，而下半册说的则是不自宫其实也可以。</p> <p>不信者的傻逼就像是马冬什么？马什么梅？什么冬梅？</p> <h2 id="二-版本信息"><a href="#二-版本信息" class="header-anchor">#</a> 二 版本信息</h2> <p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110162610416-1828217014.png" alt=""></p> <p>官网http://docs.openstack.org/newton/install-guide-rdo/keystone.html</p> <p>我们按照Newton这个版本来部署，其实跟大家讲，openstack基本保持每6个月更新一个版本，面对如此快的版本更迭，我们其实瞅准了一个版本深入研究下去就好，深入到什么层次，为社区提交代码。任何每来一个新版本就去部署一次的主都是傻叉。</p> <h2 id="三-部署keystone"><a href="#三-部署keystone" class="header-anchor">#</a> 三 部署keystone</h2> <p>参考官网<a href="http://docs.openstack.org/newton/install-guide-rdo/" target="_blank" rel="noopener noreferrer">http://docs.openstack.org/newton/install-guide-rdo/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>系统信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@localhost ~]# cat /etc/redhat-release
+CentOS Linux release 7.0.1406 (Core)
+[root@localhost ~]# uname -r
+3.10.0-123.el7.x86_64
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>step 1：准备阶段</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yum -y install centos-release-openstack-newton #安装官方yum源
+yum -y upgrade #更新
+yum -y install python-openstackclient #安装工具
+yum -y install openstack-selinux #安装openstack-selinux包自动管理openstack组件的安全策略
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>step 2：部署mariadb</strong></p> <p>安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>keystone支持ldap和mysql作为后端Driver,用来存放用户相关信息，catalog等，这里我们选用mariadb
+yum -y install mariadb mariadb-server python2-PyMySQL
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>配置：/etc/my.cnf.d/openstack.cnf</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[mysqld]
+bind-address = 192.168.31.57 #本机管理网络ip
+
+default-storage-engine = innodb
+innodb_file_per_table
+max_connections = 4096
+collation-server = utf8_general_ci
+character-set-server = utf8
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>启动服务且设置开机启动</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>systemctl start mariadb.service
+systemctl enable mariadb.service
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>初始化数据库（可有可无）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql_secure_installation
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>step 3：部署keystone</strong></p> <p>keystone关于数据库的操作</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql -u root -p #登入数据库
+CREATE DATABASE keystone; #新建库keystone
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' \
+  IDENTIFIED BY '123'; #新建本地访问keystone库的账号
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' \
+  IDENTIFIED BY '123'; #新建远程访问keystone库的账号
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>安装软件包</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#keystone软件包名openstack-keystone
+#安装httpd和mod_wsgi的原因是，社区主推apache+keystone
+#openstack-keystone本质就是一款基于wsgi协议的web app,而httpd本质就是一个兼容wsgi协议的web server，所以我们需要为httpd安装mod_wsgi模块
+yum -y install openstack-keystone httpd mod_wsgi
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>配置：/etc/keystone/keystone.conf</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#让openstack-keystone能够知道如何连接到后端的数据库keystone
+#mysql+pymysql：pymysql是一个python库，使用python可以操作mysql原生sql
+[database]
+connection = mysql+pymysql://keystone:123@192.168.31.57/keystone
+[token]
+provider = fernet #fernet为生成token的方式
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>初始化数据库keystone</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#之所以要初始化，是因为python的orm对象关系映射，需要初始化来生成数据库表结构
+su -s /bin/sh -c &quot;keystone-manage db_sync&quot; keystone
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>初始化的时候可能会报错</p> <p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110181152431-1994841330.png" alt=""></p> <p>瞬间蒙蔽：我命名建立的用户，啥啥的都能访问啊</p> <p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110181346400-132306407.png" alt=""></p> <p>初始化Fernet key仓库</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>step 4：配置web server整合keystone</strong></p> <p>修改本机主机名</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>hostnamectl set-hostname controller
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置/etc/hosts</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>192.168.31.57 controller
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置/etc/httpd/conf/httpd.conf</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ServerName controller
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>为mod_wsgi模块添加配置文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#直接拷贝模块文件或者做软连接都可以
+ln -s /usr/share/keystone/wsgi-keystone.conf /etc/httpd/conf.d/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>启动httpd服务且设置开机自启</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>systemctl start httpd.service
+systemctl enable httpd.service
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="四-keystone操作"><a href="#四-keystone操作" class="header-anchor">#</a> 四 keystone操作</h2> <p><strong>part 1：创建keystone的catalog</strong></p> <p>配置/etc/keystone/keystone.conf</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[DEFAULT]
+admin_token = 123
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>设置环境变量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#OS_TOKEN=配置文件中的admin_token
+#会在filter过滤过程中被admin_token_auth中间间设置is_admin=True
+#谁有这个admin_token谁就是管理员了。
+
+export OS_TOKEN=123 #等于keystone.conf中admin_token的值
+export OS_URL=http://192.168.31.57:35357/v3
+export OS_IDENTITY_API_VERSION=3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>为keystone创建catalog</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#基于上一步给的权限，创建认证服务实体
+openstack service create \
+  --name keystone --description &quot;OpenStack Identity&quot; identity
+
+#基于上一步建立的服务实体，创建访问该实体的三个api端点
+openstack endpoint create --region RegionOne \
+  identity public http://192.168.31.57:5000/v3
+
+openstack endpoint create --region RegionOne \
+  identity internal http://192.168.31.57:5000/v3
+
+openstack endpoint create --region RegionOne \
+  identity admin http://192.168.31.57:35357/v3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>****part 2：****创建域，租户，用户，角色，把四个元素关联到一起</p> <p>The Identity service provides authentication services for each OpenStack service. The authentication service uses a combination of <a href="http://docs.openstack.org/newton/install-guide-rdo/common/glossary.html#term-domain" target="_blank" rel="noopener noreferrer">domains<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, <a href="http://docs.openstack.org/newton/install-guide-rdo/common/glossary.html#term-project" target="_blank" rel="noopener noreferrer">projects<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, <a href="http://docs.openstack.org/newton/install-guide-rdo/common/glossary.html#term-user" target="_blank" rel="noopener noreferrer">users<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, and <a href="http://docs.openstack.org/newton/install-guide-rdo/common/glossary.html#term-role" target="_blank" rel="noopener noreferrer">roles<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>建立一个公共的域名：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack domain create --description &quot;Default Domain&quot; default
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建管理员信息：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#创建admin项目
+openstack project create --domain default \
+  --description &quot;Admin Project&quot; admin
+#创建admin用户
+openstack user create --domain default \
+  --password-prompt admin
+#创建admin角色
+openstack role create admin
+#创建上述三者的关联
+openstack role add --project admin --user admin admin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong>part 3：使用Bootstrap完成part1和part2二者的工作</strong></p> <p>Bootstrap the Identity service：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#本质就是在为keystone创建catalog
+keystone-manage bootstrap --bootstrap-password 123 \
+  --bootstrap-admin-url http://192.168.31.57:35357/v3/ \
+  --bootstrap-internal-url http://192.168.31.57:35357/v3/ \
+  --bootstrap-public-url http://192.168.31.57:5000/v3/ \
+  --bootstrap-region-id RegionOne
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>设置环境变量（is_admin不会被设置成True，admin用户会获得一个Token）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export OS_USERNAME=admin
+export OS_PASSWORD=123 #就是keystone-manage中设定的--bootstrap-password
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://192.168.31.57:35357/v3
+export OS_IDENTITY_API_VERSION=3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110215136900-986259059.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110215643900-1148446304.png" alt=""></p> <p><strong>part 4：创建用于后期测试用的项目，用户，租户，建立关联</strong></p> <p>创建project名为demo</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack project create --domain default \
+  --description &quot;Demo Project&quot; demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>创建普通用户demo</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack user create --domain default \
+  --password-prompt demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>创建普通用户的角色即user</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack role create user
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>建立关联</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack role add --project demo --user demo user
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>part 5：为后续的服务创建统一租户service</strong></p> <p>解释：后面每搭建一个新的服务都需要在keystone中执行四种操作：1.建项目 2.建用户 3.建角色 4.做关联</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#后面所有的服务公用一个项目service，都是管理员角色admin
+#所以实际上后续的服务安装关于keysotne的操作只剩2，4
+openstack project create --domain default \
+  --description &quot;Service Project&quot; service
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="五-验证"><a href="#五-验证" class="header-anchor">#</a> 五 验证</h2> <p><strong>part 1：准备</strong></p> <p>出于安全考虑，需要关闭临时令牌认证机制（配置文件中的admin_token和keystone-manage的--bootstrap-password都是基于该机制）</p> <p>该机制会将用户的请求设置is_admin=True，源码分析中会介绍，先暂且理解到这里</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>编辑/etc/keystone/keystone-paste.ini
+将
+[pipeline:public_api]
+[pipeline:admin_api]
+[pipeline:api_v3]
+中的admin_token_auth都去掉
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>取消一切设置的环境变量，如</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>unset OS_AUTH_URL OS_PASSWORD
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>part 2：验证操作方法一</strong></p> <p>管理员用户admin申请token</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack --os-auth-url http://controller:35357/v3 \
+--os-identity-api-version 3  \
+--os-project-domain-name default \
+--os-user-domain-name default   \
+--os-project-name admin \
+--os-username admin \
+token issue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110230616838-1801322419.png" alt=""></p> <p>注意：一定要加上--os-identity-api-version 3</p> <p>普通用户demo申请token</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>openstack --os-auth-url http://controller:5000/v3 \
+--os-identity-api-version 3  \
+--os-project-domain-name default \
+--os-user-domain-name default   \
+--os-project-name demo \
+--os-username demo \
+token issue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110230858853-513698000.png" alt=""></p> <p><strong>part 3：验证操作方法二</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>curl -i \
+-H &quot;Content-Type: application/json&quot; \
+-d '
+{
+    &quot;auth&quot;: {
+        &quot;identity&quot;: {
+            &quot;methods&quot;: [
+                &quot;password&quot;
+            ],
+            &quot;password&quot;: {
+                &quot;user&quot;: {
+                    &quot;domain&quot;:{
+                        &quot;name&quot;: &quot;default&quot;
+                     },
+                    &quot;name&quot;: &quot;admin&quot;,
+                    &quot;password&quot;: &quot;123&quot;
+                }
+            }
+         },
+         &quot;scope&quot;: {
+            &quot;project&quot;: {
+                &quot;domain&quot;: {
+                        &quot;name&quot;:&quot;default&quot;
+                },
+               &quot;name&quot;: &quot;admin&quot;
+            }
+         }
+     }
+}' \
+http://127.0.0.1:5000/v3/auth/tokens
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="六-创建脚本"><a href="#六-创建脚本" class="header-anchor">#</a> 六 创建脚本</h2> <p>为了不写一长串的用户信息，可以把他们定义成脚本的方式</p> <p>admin-openrc</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=admin
+export OS_USERNAME=admin
+export OS_PASSWORD=123
+export OS_AUTH_URL=http://192.168.31.57:35357/v3
+export OS_IDENTITY_API_VERSION=3
+export OS_IMAGE_API_VERSION=2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>demo-openrc</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=demo
+export OS_USERNAME=demo
+export OS_PASSWORD=123
+export OS_AUTH_URL=http://192.168.31.57:35357/v3
+export OS_IDENTITY_API_VERSION=3
+export OS_IMAGE_API_VERSION=2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>针对不同的业务应该有不同的用户信息，也都应该定义成脚本形式，方便管理</p> <p>我们的申请token操作简化成</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>source admin-openrc
+openstack token issue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/1036857-20170110231651666-253121646.png" alt=""></p> <h2 id="七-keystone使用套路总结"><a href="#七-keystone使用套路总结" class="header-anchor">#</a> 七 keystone使用套路总结</h2> <p>（1）user归属于一个或多个Project，并且在每个项目中充当一个角色。所以我们需要创建Project，创建User，创建Role，并将User和Project、Role关联起来；</p> <p>View Code</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>创建域，租户，用户，角色，把四个元素关联到一起
+建立一个公共的域名：
+openstack domain create --description &quot;Default Domain&quot; default
+
+管理员：admin
+openstack project create --domain default \
+  --description &quot;Admin Project&quot; admin
+
+openstack user create --domain default \
+  --password-prompt admin
+
+openstack role create admin
+
+openstack role add --project admin --user admin admin
+
+普通用户：demo
+openstack project create --domain default \
+  --description &quot;Demo Project&quot; demo
+
+openstack user create --domain default \
+  --password-prompt demo
+
+openstack role create user
+
+openstack role add --project demo --user demo user
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>（2）Keystone本质是提供Identity服务的，所以它的实现或者提供的机制也是基于用户来设计的。为了提供服务目录，配置Keystone的时候创建了一个特殊的ServiceProject，为每个服务创建对应的用户(Nova, Swift, cinder...)，并且都归属于ServiceProject。然后配置、设置相应的Endpoint。</p> <p>View Code</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>为后续的服务创建统一租户service，所有的服务公用一个租户service
+openstack project create --domain default \
+  --description &quot;Service Project&quot; service
+
+
+建立服务实体service
+openstack service create --name glance \
+  --description &quot;OpenStack Image&quot; image
+
+建端点endpoint
+openstack endpoint create --region RegionOne \
+  image public http://controller01:9292
+
+
+openstack endpoint create --region RegionOne \
+  image internal http://controller01:9292
+
+openstack endpoint create --region RegionOne \
+  image admin http://controller01:9292
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7828333725993554"
+            data-ad-slot="6620245489"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/05/24, 02:04:14</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/1be7af/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">网关协议cgi,fastcgi,wsgi,uwsgi</div></a> <a href="/pages/2f91a5/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">glance基础</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/1be7af/" class="prev">网关协议cgi,fastcgi,wsgi,uwsgi</a></span> <span class="next"><a href="/pages/2f91a5/">glance基础</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:506499594@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zmj0920" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2022
+    <span>前端学习之道 | <a href="https://beian.miit.gov.cn" target="_blank">豫ICP备17038403号-3</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.e227a3dc.js" defer></script><script src="/assets/js/3.fd6670bb.js" defer></script><script src="/assets/js/104.23822f40.js" defer></script>
+  </body>
+</html>

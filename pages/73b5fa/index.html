@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>入门Flutter_Dart基础 | 前端学习之道</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="code-4kmwjMtj6j">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.9c7d2b41.css" as="style"><link rel="preload" href="/assets/js/app.e227a3dc.js" as="script"><link rel="preload" href="/assets/js/3.fd6670bb.js" as="script"><link rel="preload" href="/assets/js/67.b0575854.js" as="script"><link rel="prefetch" href="/assets/js/1.cfed60bd.js"><link rel="prefetch" href="/assets/js/10.10dd3c00.js"><link rel="prefetch" href="/assets/js/100.9f455545.js"><link rel="prefetch" href="/assets/js/101.1b9f3a8e.js"><link rel="prefetch" href="/assets/js/102.82719629.js"><link rel="prefetch" href="/assets/js/103.f5b69299.js"><link rel="prefetch" href="/assets/js/104.23822f40.js"><link rel="prefetch" href="/assets/js/105.e92079f2.js"><link rel="prefetch" href="/assets/js/106.cf3ddc09.js"><link rel="prefetch" href="/assets/js/107.15bb7b72.js"><link rel="prefetch" href="/assets/js/108.d7c79b6a.js"><link rel="prefetch" href="/assets/js/109.3a6c4cc1.js"><link rel="prefetch" href="/assets/js/11.07b482fc.js"><link rel="prefetch" href="/assets/js/110.76fc6091.js"><link rel="prefetch" href="/assets/js/12.78b78a02.js"><link rel="prefetch" href="/assets/js/13.bc962a45.js"><link rel="prefetch" href="/assets/js/14.7f716e0d.js"><link rel="prefetch" href="/assets/js/15.c996be4f.js"><link rel="prefetch" href="/assets/js/16.16c6d001.js"><link rel="prefetch" href="/assets/js/17.1b224907.js"><link rel="prefetch" href="/assets/js/18.2dba00b9.js"><link rel="prefetch" href="/assets/js/19.d7c73f91.js"><link rel="prefetch" href="/assets/js/20.1c09e8d2.js"><link rel="prefetch" href="/assets/js/21.6ae0c7df.js"><link rel="prefetch" href="/assets/js/22.c61644a4.js"><link rel="prefetch" href="/assets/js/23.05b39f3c.js"><link rel="prefetch" href="/assets/js/24.276ef572.js"><link rel="prefetch" href="/assets/js/25.fc24dcd7.js"><link rel="prefetch" href="/assets/js/26.42f1d2e3.js"><link rel="prefetch" href="/assets/js/27.9d2fed53.js"><link rel="prefetch" href="/assets/js/28.ec243abd.js"><link rel="prefetch" href="/assets/js/29.4508077a.js"><link rel="prefetch" href="/assets/js/30.ceedb5fd.js"><link rel="prefetch" href="/assets/js/31.d85ea064.js"><link rel="prefetch" href="/assets/js/32.ce5dcd72.js"><link rel="prefetch" href="/assets/js/33.96f5b959.js"><link rel="prefetch" href="/assets/js/34.ae958573.js"><link rel="prefetch" href="/assets/js/35.a5ad190c.js"><link rel="prefetch" href="/assets/js/36.a35ab962.js"><link rel="prefetch" href="/assets/js/37.6ccf2d21.js"><link rel="prefetch" href="/assets/js/38.8ed68283.js"><link rel="prefetch" href="/assets/js/39.a8934ab8.js"><link rel="prefetch" href="/assets/js/4.afbf8dd4.js"><link rel="prefetch" href="/assets/js/40.a6bff98c.js"><link rel="prefetch" href="/assets/js/41.116140b6.js"><link rel="prefetch" href="/assets/js/42.bc934379.js"><link rel="prefetch" href="/assets/js/43.58944225.js"><link rel="prefetch" href="/assets/js/44.de0fac37.js"><link rel="prefetch" href="/assets/js/45.b72ab4f3.js"><link rel="prefetch" href="/assets/js/46.e8ec1522.js"><link rel="prefetch" href="/assets/js/47.ef609333.js"><link rel="prefetch" href="/assets/js/48.c856ed87.js"><link rel="prefetch" href="/assets/js/49.1f7eb9b6.js"><link rel="prefetch" href="/assets/js/5.94d22f30.js"><link rel="prefetch" href="/assets/js/50.a10f98f4.js"><link rel="prefetch" href="/assets/js/51.7d1e5e82.js"><link rel="prefetch" href="/assets/js/52.5754e4d8.js"><link rel="prefetch" href="/assets/js/53.1c9aa3b3.js"><link rel="prefetch" href="/assets/js/54.5558a87d.js"><link rel="prefetch" href="/assets/js/55.73f6339d.js"><link rel="prefetch" href="/assets/js/56.8a1ed185.js"><link rel="prefetch" href="/assets/js/57.6fe1e694.js"><link rel="prefetch" href="/assets/js/58.28ad56f0.js"><link rel="prefetch" href="/assets/js/59.5eaa01d6.js"><link rel="prefetch" href="/assets/js/6.96bfac85.js"><link rel="prefetch" href="/assets/js/60.3bdb5e6e.js"><link rel="prefetch" href="/assets/js/61.bff26c8f.js"><link rel="prefetch" href="/assets/js/62.12019e5f.js"><link rel="prefetch" href="/assets/js/63.676c0a22.js"><link rel="prefetch" href="/assets/js/64.5eca8d99.js"><link rel="prefetch" href="/assets/js/65.5358d4f4.js"><link rel="prefetch" href="/assets/js/66.f7696be2.js"><link rel="prefetch" href="/assets/js/68.b7892b68.js"><link rel="prefetch" href="/assets/js/69.1b2583a1.js"><link rel="prefetch" href="/assets/js/7.83a1503f.js"><link rel="prefetch" href="/assets/js/70.3558a44e.js"><link rel="prefetch" href="/assets/js/71.488a0e53.js"><link rel="prefetch" href="/assets/js/72.eaec1bae.js"><link rel="prefetch" href="/assets/js/73.235147f5.js"><link rel="prefetch" href="/assets/js/74.0821de1e.js"><link rel="prefetch" href="/assets/js/75.e2f2e8ee.js"><link rel="prefetch" href="/assets/js/76.5904dcd6.js"><link rel="prefetch" href="/assets/js/77.4a591fd2.js"><link rel="prefetch" href="/assets/js/78.e3fe65ce.js"><link rel="prefetch" href="/assets/js/79.a2a49e65.js"><link rel="prefetch" href="/assets/js/8.f6ebf9fb.js"><link rel="prefetch" href="/assets/js/80.9650ceea.js"><link rel="prefetch" href="/assets/js/81.ac573016.js"><link rel="prefetch" href="/assets/js/82.6b22ea4e.js"><link rel="prefetch" href="/assets/js/83.280a5762.js"><link rel="prefetch" href="/assets/js/84.7c084f95.js"><link rel="prefetch" href="/assets/js/85.f7d34184.js"><link rel="prefetch" href="/assets/js/86.e285678f.js"><link rel="prefetch" href="/assets/js/87.272866c8.js"><link rel="prefetch" href="/assets/js/88.ba170cf5.js"><link rel="prefetch" href="/assets/js/89.ba6488a4.js"><link rel="prefetch" href="/assets/js/9.f5d54197.js"><link rel="prefetch" href="/assets/js/90.50e94eaf.js"><link rel="prefetch" href="/assets/js/91.d23ea56d.js"><link rel="prefetch" href="/assets/js/92.265f84bb.js"><link rel="prefetch" href="/assets/js/93.2945ac11.js"><link rel="prefetch" href="/assets/js/94.21aa3886.js"><link rel="prefetch" href="/assets/js/95.df2bbd7f.js"><link rel="prefetch" href="/assets/js/96.ea40ed54.js"><link rel="prefetch" href="/assets/js/97.2ab6a48c.js"><link rel="prefetch" href="/assets/js/98.4f3dca3f.js"><link rel="prefetch" href="/assets/js/99.cdee6350.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9c7d2b41.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/zmj0920/image_store/blog/logo3.png" alt="前端学习之道" class="logo"> <span class="site-name can-hide">前端学习之道</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/" class="nav-link">HTML相关文章</a></li><li class="dropdown-subitem"><a href="/css/" class="nav-link">CSS相关文章</a></li><li class="dropdown-subitem"><a href="/javascript/" class="nav-link">JavaScript相关文章</a></li><li class="dropdown-subitem"><a href="/typecript/" class="nav-link">TypeScript相关文章</a></li><li class="dropdown-subitem"><a href="/vue/" class="nav-link">Vue相关文章</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">React相关文章</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">Angular相关文章</a></li><li class="dropdown-subitem"><a href="/flutter/" class="nav-link">Flutter相关文章</a></li><li class="dropdown-subitem"><a href="/applet/" class="nav-link">小程序相关文章</a></li><li class="dropdown-subitem"><a href="/node/" class="nav-link">Node相关文章</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/admin/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/khe2h7e8xh/" class="nav-link">GO语言基础学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/635088/" class="nav-link">《Git》学习笔记</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="云计算" class="dropdown-title"><a href="/cloudcomputing/" class="link-title">云计算</a> <span class="title" style="display:none;">云计算</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>云计算</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/openstack/" class="nav-link">OpenStack 系列</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><a href="/pages/e14099/" class="link-title">问题</a> <span class="title" style="display:none;">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/e14099/" class="nav-link">问题列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><a href="/pages/ad247c4332211551/" class="link-title">指南</a> <span class="title" style="display:none;">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>相关文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/ad247c4332211551/" class="nav-link">Markdown使用教程 容器</a></li><li class="dropdown-subitem"><a href="/pages/c5a54d/" class="nav-link">在线编辑和新增文章的方法</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/pages/1cc523/" class="nav-link">添加摘要</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">Article timeline</a></div> <a href="https://github.com/zmj0920/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/html/" class="nav-link">HTML相关文章</a></li><li class="dropdown-subitem"><a href="/css/" class="nav-link">CSS相关文章</a></li><li class="dropdown-subitem"><a href="/javascript/" class="nav-link">JavaScript相关文章</a></li><li class="dropdown-subitem"><a href="/typecript/" class="nav-link">TypeScript相关文章</a></li><li class="dropdown-subitem"><a href="/vue/" class="nav-link">Vue相关文章</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">React相关文章</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">Angular相关文章</a></li><li class="dropdown-subitem"><a href="/flutter/" class="nav-link">Flutter相关文章</a></li><li class="dropdown-subitem"><a href="/applet/" class="nav-link">小程序相关文章</a></li><li class="dropdown-subitem"><a href="/node/" class="nav-link">Node相关文章</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><a href="/admin/" class="link-title">后端</a> <span class="title" style="display:none;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/khe2h7e8xh/" class="nav-link">GO语言基础学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/635088/" class="nav-link">《Git》学习笔记</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="云计算" class="dropdown-title"><a href="/cloudcomputing/" class="link-title">云计算</a> <span class="title" style="display:none;">云计算</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>云计算</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/openstack/" class="nav-link">OpenStack 系列</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/pages/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/pages/eee83a9211a70f9d/" class="nav-link">资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="问题" class="dropdown-title"><a href="/pages/e14099/" class="link-title">问题</a> <span class="title" style="display:none;">问题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/e14099/" class="nav-link">问题列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><a href="/pages/ad247c4332211551/" class="link-title">指南</a> <span class="title" style="display:none;">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>相关文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/ad247c4332211551/" class="nav-link">Markdown使用教程 容器</a></li><li class="dropdown-subitem"><a href="/pages/c5a54d/" class="nav-link">在线编辑和新增文章的方法</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/pages/1cc523/" class="nav-link">添加摘要</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">Article timeline</a></div> <a href="https://github.com/zmj0920/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/pages/73b5fa/" aria-current="page" class="active sidebar-link">入门Flutter_Dart基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#dart-环境搭建" class="sidebar-link">Dart 环境搭建</a></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#dart-的命名规则" class="sidebar-link">Dart 的命名规则</a></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#dart-变量" class="sidebar-link">Dart 变量</a></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#string-字符串" class="sidebar-link">String(字符串)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#定义几种方式" class="sidebar-link">定义几种方式</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#字符拼接" class="sidebar-link">字符拼接</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#属性介绍" class="sidebar-link">属性介绍</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#方法介绍" class="sidebar-link">方法介绍</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#number-int-和-double" class="sidebar-link">Number int 和 double</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#int-常用的判断属性" class="sidebar-link">int 常用的判断属性</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#int-数字类型中常用的函数" class="sidebar-link">int 数字类型中常用的函数</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#double-类型属性" class="sidebar-link">double 类型属性</a></li><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#double-类型相关方法的使用" class="sidebar-link">double 类型相关方法的使用</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#常量-final-和-const-修饰符" class="sidebar-link">常量 final 和 const 修饰符</a></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#bool-类型" class="sidebar-link">bool 类型</a></li><li class="sidebar-sub-header level2"><a href="/pages/73b5fa/#list-数组-集合" class="sidebar-link">List 数组/集合</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/73b5fa/#删除" class="sidebar-link">删除</a></li></ul></li></ul></li><li><a href="/pages/37cf9f/" class="sidebar-link">Flutter基础学习</a></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7828333725993554"
+            data-ad-slot="3508773082"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1baff76c><div class="articleInfo" data-v-1baff76c><ul class="breadcrumbs" data-v-1baff76c><li data-v-1baff76c><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1baff76c></a></li> <li data-v-1baff76c><span data-v-1baff76c>Flutter文章</span></li></ul> <div class="info" data-v-1baff76c><div title="作者" class="author iconfont icon-touxiang" data-v-1baff76c><a href="https://github.com/zmj0920" target="_blank" title="作者" class="beLink" data-v-1baff76c>前端学习之道</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1baff76c><a href="javascript:;" data-v-1baff76c>2021-01-03</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">入门Flutter_Dart基础<!----></h1>  <div class="theme-vdoing-content content__default"><h1 id="入门flutter-dart基础"><a href="#入门flutter-dart基础" class="header-anchor">#</a> 入门Flutter_Dart基础</h1> <h1 id="dart-介绍"><a href="#dart-介绍" class="header-anchor">#</a> Dart 介绍</h1> <ul><li>Dart 是由谷歌开发的计算机编程语言,它可以被用于 web、服务器、移动应用 和物联网等领域的开发。</li> <li>Dart 诞生于 2011 年，号称要取代 JavaScript</li> <li>要学 Flutter 的话我们必须首先得会 Dart。</li> <li>官网：https://dart.dev/</li> <li>flutterUI  https://flutter-widget.live/zh_CN/basics/introduction</li> <li>https://javiercbk.github.io/json_to_dart/</li> <li>https://www.dartcn.com/guides/language/language-tour#final-%E5%92%8C-const</li></ul> <h2 id="dart-环境搭建"><a href="#dart-环境搭建" class="header-anchor">#</a> Dart 环境搭建</h2> <p>要在我们本地开发 Dart 程序的话首先需要安装 Dart Sdk</p> <p>官方文档：https://dart.dev/get-dart</p> <p>windows(推荐):</p> <p>http://www.gekorm.com/dart-windows/</p> <p>mac：</p> <p>如果 mac 电脑没有安装 brew 这个工具首先第一步需要安装它： https://brew.sh/</p> <p>brew tap dart-lang/dart</p> <p>brew install dart</p> <h2 id="dart-的命名规则"><a href="#dart-的命名规则" class="header-anchor">#</a> Dart 的命名规则</h2> <p>1.变量名称必须由数字、字母、下划线和美元符($)组成。</p> <p>2.注意：标识符开头不能是数字</p> <p>3.标识符不能是保留字和关键字。</p> <p>4.变量的名字是区分大小写的如: age 和 Age 是不同的变量。在实际的运用中,也建议,不要用一个单词大小写区分两个变量。</p> <p>5.标识符(变量名称)一定要见名思意 ：变量名称建议用名词，方法名称建议用动词</p> <h2 id="dart-变量"><a href="#dart-变量" class="header-anchor">#</a> Dart 变量</h2> <p>dart 是一个强大的脚本类语言，可以不预先定义变量类型 ，自动会类型推倒</p> <p>dart 中定义变量可以通过 var 关键字可以通过类型来申明变量</p> <p>dart 内置类型校验</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    var str='this is var';
+
+    String str='this is var';
+
+    int str=123;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>注意： var 后就不要写类型 ， 写了类型 不要 var 两者都写 var a int = 5; 报错</p> <h2 id="string-字符串"><a href="#string-字符串" class="header-anchor">#</a> String(字符串)</h2> <h3 id="定义几种方式"><a href="#定义几种方式" class="header-anchor">#</a> 定义几种方式</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> var str1='string';
+ String str2='string';
+
+ var str3 ='''fdssfsdf
+ sfsfsdf'''; //三个单引号和双引号可以换行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="字符拼接"><a href="#字符拼接" class="header-anchor">#</a> 字符拼接</h3> <p>变量可以直接使用$str 运算符可以使用${str1*2}</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  int a = 2;
+  print(&quot;$str1 $str2&quot;);
+  print(str1+str2);
+  print(&quot;${a*2}&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="属性介绍"><a href="#属性介绍" class="header-anchor">#</a> 属性介绍</h3> <ul><li>根据索引获得字符</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str[1]); //2
+str.length // 6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>isEmpty 字符串是否是空的</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.isEmpty);//false
+print(''.isEmpty); // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>isNotEmpty 字符串是否不是空的</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.isNotEmpty); //true
+print(''.isNotEmpty);  // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>runes 字符串 Unicode 代码的可迭代对象</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.runes); //(49, 50, 51, 52, 53, 54)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>codeUnits 字符串的 UTF-16 代码单元列表</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.codeUnits); //[49, 50, 51, 52, 53, 54]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>hashCode 根据代码单元生成的哈希码</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.hashCode); // 788018113
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>runtimeType 对象运行时的类型</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = '123456';
+print(str.runtimeType);  // String
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="方法介绍"><a href="#方法介绍" class="header-anchor">#</a> 方法介绍</h3> <ul><li>字符串比较</li></ul> <p>相同返回 0 不同返回-1</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = 'abc';
+print(str.compareTo('abc')); //0 相同
+print(str.compareTo('abcd'));// -1 不同
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>大小写转换</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const str = 'abc';
+const str1 ='ABC';
+print(str.toUpperCase()); //大写 abc&gt;ABC
+print(str1.toLowerCase()); //小写 ABC&gt;abc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>截取字符串(开头索引和结尾索引)</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>String str = 'abcdef';
+print(str.substring(0, 3)); // abc 从下标0开始到下标3结束截取不包括下标3
+
+// 只有开头索引, 默认截取到最后
+print(str.substring(2)); // cdef
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>拆分字符串</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>String str = 'ab,cd,ef';
+print(str.split(',')); //[ab, cd, ef]
+print(str.split(new RegExp(r&quot;c&quot;))); //[ab,, d,ef]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>去\t\t tab 空格和换行符</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>String str = '\t\tab  ce\n';
+print(str.trim()); //ab ce
+//去掉字符串开头的tab空格和换行符
+
+str.trimLeft()
+
+// 去掉字符串结尾的tab空格和换行符
+str.trimRight()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="number-int-和-double"><a href="#number-int-和-double" class="header-anchor">#</a> Number int 和 double</h2> <p>int 必须是整型 不支持小数</p> <p>double 既可以是整型 也可是浮点型</p> <h3 id="int-常用的判断属性"><a href="#int-常用的判断属性" class="header-anchor">#</a> int 常用的判断属性</h3> <ul><li>是否为负数</li></ul> <p>大于 0 即为 false</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isNegative);//false
+print(0.isNegative);//false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>是否是有限的</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isFinite); //true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>是否是无穷大或者无穷小</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isInfinite); //false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>是否为偶数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isEven); //true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>是否为奇数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isOdd); //false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>是否是 NaN 值</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 12;
+print(num.isNaN); //false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="int-数字类型中常用的函数"><a href="#int-数字类型中常用的函数" class="header-anchor">#</a> int 数字类型中常用的函数</h3> <ul><li>获取绝对值</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = -12;
+print(num.abs()); //12
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>转成字符串</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = -12;
+print(num.toString()); //-12
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>幂次求模</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// num的4次幂, 在对num的四次幂求模
+int num = 2;
+print(num.modPow(4, 2)); //0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>比较大小</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 比较大小, 0:相同、1:大于、-1:小于
+int num = 2;
+print(num.compareTo(30)); // -1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>转成 double</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>int num = 2;
+print(num.toDouble());//2.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>返回余数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// num/5的余数
+int num = 10;
+print(num.remainder(5)); //0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>最大公约数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// num和16的最大公约数
+int num = 10;
+print(num.gcd(16)); //2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="double-类型属性"><a href="#double-类型属性" class="header-anchor">#</a> double 类型属性</h3> <ul><li>是否是 NaN 值</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>double num = 12.23;
+print(num.isNaN); //false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>根据代码单元生成的哈希码</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>double num = 12.23;
+print(num.hashCode); //11388478633041204
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="double-类型相关方法的使用"><a href="#double-类型相关方法的使用" class="header-anchor">#</a> double 类型相关方法的使用</h3> <ul><li>四舍五入</li></ul> <p>round() 取整</p> <p>ceil() 向上取整</p> <p>floor() 向下取整</p> <p>toStringAsFixed(2) 保留指定的小数位数(四舍五入), 不足补 0, 字符串返回</p> <p>toStringAsPrecision(10) 保留变量的位数(小数点前后的总位数), 不足补 0, 多余的四舍五入</p> <blockquote><p>类型转换</p></blockquote> <ul><li>int -&gt; double</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> double b = a.toDouble();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>double -&gt;int</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> int d = c.toInt();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>String -&gt; int</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> int one = int.parse('1'); // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>String -&gt; double</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> double onePointOne = double.parse('1.1'); // 1.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>String -&gt; double</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> double onePointOne = double.parse('1.1'); // 1.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>int -&gt; String</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>  String oneAsString = 1.toString(); //'1'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>double -&gt; String</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> String piAsString = 3.14159.toStringAsFixed(2); //3.14
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="常量-final-和-const-修饰符"><a href="#常量-final-和-const-修饰符" class="header-anchor">#</a> 常量 final 和 const 修饰符</h2> <p>const 值不变 一开始就得赋值</p> <p>final 可以开始不赋值只能赋一次 ; 而 final 不仅有 const 的编译时常量的特性，
+最重要的它是运行时常量，并且 final 是惰性初始化，即在运行时第一次使用前才初始化</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> const PI=3.14159;
+ PI=123.1243; //错误的写法 常量不可以修改
+ print(PI);
+ final PI=3.14159;
+ PI=124214.214124;   //错误写法
+ print(PI);
+
+
+ const str3=new DateTime.now(); 报错
+ final str3=new DateTime.now();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>区别：final 可以开始不赋值 只能赋一次 ; 而 final 不仅有 const 的编译时常量的特性，
+最重要的它是运行时常量，并且 final 是惰性初始化，即在运行时第一次使用前才初始化</p> <h2 id="bool-类型"><a href="#bool-类型" class="header-anchor">#</a> bool 类型</h2> <p>Dart 使用 bool 类型表示布尔值。 Dart 只有字面量 true and false 是布尔类型， 这两个对象都是编译时常量</p> <h2 id="list-数组-集合"><a href="#list-数组-集合" class="header-anchor">#</a> List 数组/集合</h2> <blockquote><p>List 定义方式</p></blockquote> <p>设置了参数 length(length 不能为负数或 null)，创建的 List 是固定长度的
+元素可修改, 元素个数不可修改, 不能删除和增加元素</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var l1 = new List(3);  //[null, null, null]
+print(l1.length);  //3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>未设置参数 length，那么 List 的长度是 0，并且是可增长的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 这两种方式一样
+var l10 = new List();
+var l11 = [];
+
+l10.length = 3;
+l10.add(1);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>使用指定长度创建一个可增长的 List 时，仅仅在刚创建后分配长度</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>List growableList = new List()..length = 500;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>3、定义 List 指定类型</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>  var l3 = new List&lt;String&gt;();
+
+  l3.add('张三');
+
+  l3.add('123');
+
+  print(l3);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>方法</p></blockquote> <ul><li>添加元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>arr1.add(5);
+// 添加一个数组
+arr1.addAll([10, 12]);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>查找</p></blockquote> <ul><li>是否包含某元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['1', '2', '3', '4', '5'];
+print(arr2.contains('1'));  // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>判断数组是否有满足条件的元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+print(arr2.any((item) =&gt; item.length &gt; 4));  // true
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>判断数组是否所有元素都满足条件</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two'];
+print(arr2.every((item) =&gt; item.length ==3));  // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>List 转化为 Map 类型</li></ul> <p>索引作为 Key 值，对应的元素作为 Value</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two'];
+print(arr2.asMap());  // {0: one, 1: two}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>随机打乱 List 中的元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+arr2.shuffle();
+print(arr2);   // [three, one, two, four, one]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>获取元素对应的索引值, 默认从索引 0 开始</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+print(arr2.indexOf('one'));  // 0
+
+// 从第2个索引开始查找
+
+print(arr2.indexOf('one', 2));  // 3
+
+
+// 如果找不到, 返回-1
+
+print(arr2.indexOf('five'));  // -1
+
+// 获取元素对应的索引值, 从后往前找
+
+print(arr2.lastIndexOf('one'));
+print(arr2.lastIndexOf('one', 3));
+print(arr2.lastIndexOf('five'));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li>返回满足条件的第一个元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+
+print(arr2.firstWhere((item) =&gt; item == 'one'));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>截取新的 List</li></ul> <p>包含从 start（包括）到 end（不包括）的对象, 原数组不变</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+print(arr2.sublist(1, 3)); // [two, three]
+// 不指定end, 默认到数组结尾
+print(arr2.sublist(2)); // [three, one, four]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>数组拼接成字符串</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+print(arr2.join());      //onetwothreefour
+print(arr2.join('-'));   //one-two-three-four
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>截取 count 之后的元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>arr2 = ['one', 'two', 'three', 'four'];
+print(arr2.skip(2)); // (three, four)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>截取最初的 count 元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>List arr2 = ['one', 'two', 'three', 'one', 'four'];
+print(arr2.take(2)); // (one, two)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>返回所有不符合该条件的元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>arr2 = ['one', 'two', 'three', 'four'];
+print(arr2.skipWhile((item) =&gt; item.length == 3));  //(three, four)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>获取某一区间的元素, 返回一个数组</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>arr2 = ['one', 'two', 'three', 'four'];
+print(arr2.getRange(1, 3));    // ['two', 'three']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="删除"><a href="#删除" class="header-anchor">#</a> 删除</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr2 = ['one', 'two', 'three', 'one', 'four'];
+
+// 删除指定的元素
+// 如果有该元素, 返回true
+print(arr2.remove('two'));  // true
+print(arr2);   // [one, three, one, four]
+// 如果没有该元素, 返回false
+print(arr2.remove('five'));  // false
+
+// 根据索引删除, 返回被删除的元素值
+print(arr2.removeAt(1));  // three
+print(arr2);   // [one, one, four]
+
+// 删除最后一个元素, 返回该元素值
+print(arr2.removeLast());  // four
+print(arr2); // [one, one]
+
+// 删除一个区间的元素, 含左不含右[start, end)
+arr2.addAll(['six', 'seven', 'eight']);
+arr2.removeRange(1, 3);
+print(arr2);  // [one, seven, eight]
+
+// 删除所有符合条件的元素
+arr2.removeWhere((item) =&gt; item.length == 3);
+print(arr2);  // [seven, eight]
+
+//删除List中所有不满足条件的元素
+arr2.retainWhere((item) =&gt; item.length &gt; 3);
+print(arr2);
+
+// 删除所有的元素
+arr1.clear();
+print(arr1);  // []
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><blockquote><p>插入</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr3 = [1, 3, 4];
+// 在某处插入元素
+arr3.insert(1, 10);
+print(arr3); //[1, 10, 3, 4]
+
+// 插入一个数组
+arr3.insertAll(2, [12, 32]);
+print(arr3);
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7828333725993554"
+            data-ad-slot="6620245489"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/05/22, 03:36:06</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/pages/37cf9f/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Flutter基础学习</div></a></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/37cf9f/">Flutter基础学习</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:506499594@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zmj0920" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2022
+    <span>前端学习之道 | <a href="https://beian.miit.gov.cn" target="_blank">豫ICP备17038403号-3</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.e227a3dc.js" defer></script><script src="/assets/js/3.fd6670bb.js" defer></script><script src="/assets/js/67.b0575854.js" defer></script>
+  </body>
+</html>
